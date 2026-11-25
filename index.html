@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light only">
+  <title>Cheki Book | Instant Photo Scrapbook &amp; 3D Polaroid Vault</title>
+  <meta name="description" content="Turn your photos and physical instant prints into tactile 3D Polaroids with 9 frames, 5 film filters, handwritten back notes, and ring-bound landscape album books.">
+  <link rel="icon" type="image/png" href="assets/mascot-camera.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#top" class="brand-link" aria-label="Cheki Book home">
+        <img src="assets/mascot-camera.png" alt="" width="40" height="40" class="brand-mark">
+        <span class="brand-name">Cheki Book</span>
+      </a>
+      <nav aria-label="Primary" class="primary-nav">
+        <ul>
+          <li><a href="#studio">Studio</a></li>
+          <li><a href="#album-book">Book</a></li>
+          <li><a href="#scanner">Scanner</a></li>
+          <li><a href="#everyday">Features</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero: Centered monumental headline + wide interactive 3D Cheki workbench -->
+    <section class="hero-section">
+      <div class="hero-inner">
+        <h1 id="main-content" tabindex="-1" class="hero-title">
+          Turn every photo into a
+          <span class="hero-inline-token" aria-hidden="true">
+            <img src="assets/mascot-camera.png" alt="" width="84" height="84" fetchpriority="high">
+          </span>
+          keepsake
+        </h1>
+        <p class="hero-subtitle">
+          Scan physical prints, dress photos in 9 tactile frames, write notes on the back, and flip through ring-bound albums.
+        </p>
+        <div class="hero-action">
+          <a href="#studio" class="cta-primary">Try the interactive studio</a>
+        </div>
+
+        <!-- Wide interactive 3D Cheki Workbench above the fold -->
+        <div class="hero-workbench" aria-label="Interactive 3D Polaroid previews">
+          <div class="hero-cards-stage" id="hero-cards-stage">
+            <!-- Card 1: Classic White -->
+            <button type="button" class="cheki-3d-card frame-classic-white" data-hero-card aria-pressed="false" aria-label="Flip Venice Beach Boardwalk Polaroid to read back note">
+              <span class="cheki-3d-inner">
+                <span class="cheki-face cheki-front">
+                  <span class="cheki-sheen" aria-hidden="true"></span>
+                  <span class="cheki-photo-window">
+                    <img src="assets/photo-venice.jpg" alt="Golden-hour Venice Beach boardwalk with palm silhouettes against a peach sunset" width="320" height="320" fetchpriority="high" class="filter-classic-600">
+                  </span>
+                  <span class="cheki-chin">
+                    <span class="cheki-caption">Venice Beach Boardwalk</span>
+                    <span class="cheki-meta">July 18, 2024 &bull; Venice Beach, CA</span>
+                  </span>
+                  <span class="rainbow-stripe" aria-hidden="true"></span>
+                </span>
+                <span class="cheki-face cheki-back">
+                  <span class="cheki-back-header">
+                    <span class="cheki-back-stamp">July 18, 2024</span>
+                    <span class="cheki-back-album">Summer '24</span>
+                  </span>
+                  <span class="cheki-back-note">Warm salt air and roller skates. We stayed until the sun dipped into the Pacific. Sarah lost her sunglasses in the sand and we could not stop laughing.</span>
+                  <span class="cheki-back-footer">Venice Beach, CA</span>
+                </span>
+              </span>
+            </button>
+
+            <!-- Card 2: Melon Soda (Center hero spotlight) -->
+            <button type="button" class="cheki-3d-card frame-melon-soda is-featured" data-hero-card aria-pressed="false" aria-label="Flip Kissaten Melon Soda Polaroid to read back note">
+              <span class="cheki-3d-inner">
+                <span class="cheki-face cheki-front">
+                  <span class="cheki-sheen" aria-hidden="true"></span>
+                  <span class="cheki-photo-window">
+                    <img src="assets/photo-cafe.jpg" alt="Fizzy emerald-green Japanese melon cream soda with ice cream and a cherry on a wooden table" width="320" height="320" fetchpriority="high" class="filter-spectra-vivid">
+                  </span>
+                  <span class="cheki-chin">
+                    <span class="cheki-caption">Afternoon Melon Soda</span>
+                    <span class="cheki-meta">May 11, 2025 &bull; Shimokitazawa</span>
+                  </span>
+                  <span class="cheki-frame-accent" aria-hidden="true"></span>
+                </span>
+                <span class="cheki-face cheki-back">
+                  <span class="cheki-back-header">
+                    <span class="cheki-back-stamp">May 11, 2025</span>
+                    <span class="cheki-back-album">Tokyo Cafes</span>
+                  </span>
+                  <span class="cheki-back-note">Found a quiet second-floor kissaten playing vinyl jazz. The ice cream melted into fizzy emerald foam while afternoon light poured across the table.</span>
+                  <span class="cheki-back-footer">Shimokitazawa, Tokyo</span>
+                </span>
+              </span>
+            </button>
+
+            <!-- Card 3: Obsidian Black -->
+            <button type="button" class="cheki-3d-card frame-obsidian-black" data-hero-card aria-pressed="false" aria-label="Flip Shinjuku Rain Alley Polaroid to read back note">
+              <span class="cheki-3d-inner">
+                <span class="cheki-face cheki-front">
+                  <span class="cheki-sheen" aria-hidden="true"></span>
+                  <span class="cheki-photo-window">
+                    <img src="assets/photo-tokyo.jpg" alt="Rainy twilight alleyway in Shinjuku with glowing magenta and cyan lantern reflections" width="320" height="320" fetchpriority="high" class="filter-spectra-vivid">
+                  </span>
+                  <span class="cheki-chin">
+                    <span class="cheki-caption">Shinjuku Rain Alley</span>
+                    <span class="cheki-meta">April 4, 2024 &bull; Shinjuku, Tokyo</span>
+                  </span>
+                  <span class="rainbow-stripe" aria-hidden="true"></span>
+                </span>
+                <span class="cheki-face cheki-back">
+                  <span class="cheki-back-header">
+                    <span class="cheki-back-stamp">April 4, 2024</span>
+                    <span class="cheki-back-album">Wanderlust</span>
+                  </span>
+                  <span class="cheki-back-note">Steaming ramen broth after getting caught in a sudden downpour. Cherry blossoms and neon reflections in the puddles looked like cinema.</span>
+                  <span class="cheki-back-footer">Shinjuku, Tokyo</span>
+                </span>
+              </span>
+            </button>
+          </div>
+          <p class="workbench-hint">Hover to feel 3D gyroscope tilt. Click any print to flip it over and read the handwritten back note.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1: Interactive 3D Polaroid Studio (Melon-Soda Mint Color Block) -->
+    <section class="studio-section" id="studio">
+      <div class="section-shell">
+        <div class="section-header-wide">
+          <h2>Nine tactile frames, five instant film stocks, two sides to every story</h2>
+          <p>
+            Import any photo from your gallery and style it like a real print. Switch frame paper, test analog emulsions, and flip the card in 3D to write memories on ruled archival stock.
+          </p>
+        </div>
+
+        <div class="studio-grid">
+          <!-- Left: Live Interactive 3D Card Stage -->
+          <div class="studio-stage">
+            <div class="studio-card-wrapper">
+              <button type="button" class="cheki-3d-card studio-card frame-peach-paws" id="studio-card" aria-pressed="false" aria-label="Flip live Polaroid preview between front photo and back note">
+                <span class="cheki-3d-inner">
+                  <span class="cheki-face cheki-front">
+                    <span class="cheki-sheen" aria-hidden="true"></span>
+                    <span class="cheki-photo-window">
+                      <img id="studio-photo-img" src="assets/photo-campfire.jpg" alt="Cozy twilight campfire glowing amber under tall Big Sur redwood trees" width="420" height="420" loading="lazy" class="filter-classic-600">
+                    </span>
+                    <span class="cheki-chin">
+                      <span class="cheki-caption" id="studio-caption-preview">Twilight around the Fire</span>
+                      <span class="cheki-meta" id="studio-meta-preview">August 22, 2024 &bull; Big Sur, CA</span>
+                    </span>
+                    <span class="rainbow-stripe" aria-hidden="true"></span>
+                    <span class="cheki-frame-accent" aria-hidden="true"></span>
+                  </span>
+                  <span class="cheki-face cheki-back">
+                    <span class="cheki-back-header">
+                      <span class="cheki-back-stamp" id="studio-back-date">August 22, 2024</span>
+                      <span class="cheki-back-album">Roadtrips</span>
+                    </span>
+                    <span class="cheki-back-note" id="studio-note-preview">Woodsmoke in our sweaters, acoustic guitar chords bouncing through the redwoods. Hot tea and ghost stories under a canopy of stars.</span>
+                    <span class="cheki-back-footer" id="studio-back-location">Big Sur, CA</span>
+                  </span>
+                </span>
+              </button>
+            </div>
+
+            <div class="studio-stage-bar">
+              <div class="segmented-control" role="group" aria-label="Choose photo subject">
+                <input type="radio" name="studio-photo" id="photo-opt-campfire" value="campfire" checked>
+                <label for="photo-opt-campfire">Campfire</label>
+                <input type="radio" name="studio-photo" id="photo-opt-venice" value="venice">
+                <label for="photo-opt-venice">Venice</label>
+                <input type="radio" name="studio-photo" id="photo-opt-cafe" value="cafe">
+                <label for="photo-opt-cafe">Melon Soda</label>
+                <input type="radio" name="studio-photo" id="photo-opt-tokyo" value="tokyo">
+                <label for="photo-opt-tokyo">Shinjuku</label>
+              </div>
+              <button type="button" class="cta-primary" id="studio-flip-btn">Flip card in 3D</button>
+            </div>
+          </div>
+
+          <!-- Right: Tactile Controls (Frames, Filters, Live Caption & Back Note) -->
+          <div class="studio-controls">
+            <fieldset class="control-group">
+              <legend>Physical frame stock</legend>
+              <div class="frame-swatch-grid" id="frame-swatch-grid">
+                <label class="swatch-option">
+                  <input type="radio" name="frame-style" value="classic-white">
+                  <span class="swatch-chip swatch-classic-white" aria-hidden="true"></span>
+                  <span class="swatch-label">Classic White</span>
+                </label>
+                <label class="swatch-option">
+                  <input type="radio" name="frame-style" value="melon-soda">
+                  <span class="swatch-chip swatch-melon-soda" aria-hidden="true"></span>
+                  <span class="swatch-label">Melon Soda</span>
+                </label>
+                <label class="swatch-option">
+                  <input type="radio" name="frame-style" value="peach-paws" checked>
+                  <span class="swatch-chip swatch-peach-paws" aria-hidden="true"></span>
+                  <span class="swatch-label">Peach Paws</span>
+                </label>
+                <label class="swatch-option">
+                  <input type="radio" name="frame-style" value="berry-gingham">
+                  <span class="swatch-chip swatch-berry-gingham" aria-hidden="true"></span>
+                  <span class="swatch-label">Berry Gingham</span>
+                </label>
+                <label class="swatch-option">
+                  <input type="radio" name="frame-style" value="dreamy-stars">
+                  <span class="swatch-chip swatch-dreamy-stars" aria-hidden="true"></span>
+                  <span class="swatch-label">Dreamy Stars</span>
+                </label>
+                <label class="swatch-option">
+                  <input type="radio" name="frame-style" value="pastel-blush">
+                  <span class="swatch-chip swatch-pastel-blush" aria-hidden="true"></span>
+                  <span class="swatch-label">Pastel Blush</span>
+                </label>
+                <label class="swatch-option">
+                  <input type="radio" name="frame-style" value="vintage-cream">
+                  <span class="swatch-chip swatch-vintage-cream" aria-hidden="true"></span>
+                  <span class="swatch-label">Vintage Cream</span>
+                </label>
+                <label class="swatch-option">
+                  <input type="radio" name="frame-style" value="obsidian-black">
+                  <span class="swatch-chip swatch-obsidian-black" aria-hidden="true"></span>
+                  <span class="swatch-label">Obsidian Black</span>
+                </label>
+                <label class="swatch-option">
+                  <input type="radio" name="frame-style" value="metallic-gold">
+                  <span class="swatch-chip swatch-metallic-gold" aria-hidden="true"></span>
+                  <span class="swatch-label">Metallic Gold</span>
+                </label>
+              </div>
+              <p class="control-tagline" id="frame-tagline">Creamy peach stock with tiny pink paw prints</p>
+            </fieldset>
+
+            <fieldset class="control-group">
+              <legend>Instant film emulsion</legend>
+              <div class="segmented-control segmented-wrap" id="filter-control">
+                <input type="radio" name="film-filter" id="filter-original" value="original">
+                <label for="filter-original">Original</label>
+                <input type="radio" name="film-filter" id="filter-classic-600" value="classic-600" checked>
+                <label for="filter-classic-600">Classic 600</label>
+                <input type="radio" name="film-filter" id="filter-sx70" value="sx70-vintage">
+                <label for="filter-sx70">SX-70 Vintage</label>
+                <input type="radio" name="film-filter" id="filter-spectra" value="spectra-vivid">
+                <label for="filter-spectra">Spectra Vivid</label>
+                <input type="radio" name="film-filter" id="filter-mono" value="monochrome-bw">
+                <label for="filter-mono">Monochrome B&amp;W</label>
+              </div>
+            </fieldset>
+
+            <div class="control-group note-inputs">
+              <div class="field-pair">
+                <label for="caption-input">Front chin caption</label>
+                <input type="text" id="caption-input" maxlength="44" value="Twilight around the Fire">
+              </div>
+              <div class="field-pair">
+                <label for="note-input">Handwritten back note</label>
+                <textarea id="note-input" rows="3" maxlength="200">Woodsmoke in our sweaters, acoustic guitar chords bouncing through the redwoods. Hot tea and ghost stories under a canopy of stars.</textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Interactive Landscape Album Book (Starry Night Velvet Stage) -->
+    <section class="book-section" id="album-book">
+      <div class="section-shell">
+        <div class="section-header-wide book-header">
+          <h2>Rotate your phone to open a physical two-page scrapbook</h2>
+          <p>
+            In landscape mode, every album transforms into a ring-bound keepsake book with page-curl turns, 8 curated paper themes, and die-cut vinyl stickers you can place anywhere.
+          </p>
+        </div>
+
+        <div class="book-workspace">
+          <!-- Open Ring-Bound Book Spread -->
+          <div class="book-stage-wrap">
+            <div class="album-book-frame theme-cream-classic" id="album-book-frame">
+              <!-- Left Page -->
+              <div class="book-page book-page-left" id="book-page-left">
+                <div class="book-pocket-grid" id="left-page-slots"></div>
+                <span class="book-page-num" id="left-page-num">01</span>
+              </div>
+
+              <!-- Center Ring Binding -->
+              <div class="book-spine" aria-hidden="true">
+                <span class="binder-ring"></span>
+                <span class="binder-ring"></span>
+                <span class="binder-ring"></span>
+                <span class="binder-ring"></span>
+              </div>
+
+              <!-- Right Page -->
+              <div class="book-page book-page-right" id="book-page-right">
+                <div class="book-pocket-grid" id="right-page-slots"></div>
+                <div class="book-sticker-layer" id="book-sticker-layer" aria-label="Decorated stickers on right page"></div>
+                <span class="book-page-num" id="right-page-num">02</span>
+              </div>
+            </div>
+
+            <div class="book-nav-bar">
+              <button type="button" class="book-turn-btn" id="prev-spread-btn" aria-label="Previous spread">Previous pages</button>
+              <span class="book-spread-label" id="book-spread-label">Pages 1 to 2 of 4</span>
+              <button type="button" class="book-turn-btn" id="next-spread-btn" aria-label="Next spread">Next pages</button>
+            </div>
+          </div>
+
+          <!-- Book Design Studio Panel using accessible Tabs pattern -->
+          <aside class="design-studio-panel" aria-label="Book Design Studio">
+            <h3>Book Design Studio</h3>
+            <div class="studio-tabs">
+              <div class="tablist" role="tablist" aria-label="Book design options">
+                <button type="button" role="tab" id="tab-papers" aria-selected="true" tabindex="0">Page Paper</button>
+                <button type="button" role="tab" id="tab-stickers" aria-selected="false" tabindex="-1">Stickers</button>
+              </div>
+
+              <div role="tabpanel" id="panel-papers" aria-labelledby="tab-papers">
+                <div class="tabpanel-inner">
+                  <p class="panel-intro">Pick one of 8 cardstock papers saved per album.</p>
+                  <div class="paper-theme-grid" id="paper-theme-grid">
+                    <label class="paper-choice">
+                      <input type="radio" name="book-theme" value="cream-classic" checked>
+                      <span class="paper-dot dot-cream" aria-hidden="true"></span>
+                      <span>Archival Cream</span>
+                    </label>
+                    <label class="paper-choice">
+                      <input type="radio" name="book-theme" value="peach-gingham">
+                      <span class="paper-dot dot-peach" aria-hidden="true"></span>
+                      <span>Peach Gingham</span>
+                    </label>
+                    <label class="paper-choice">
+                      <input type="radio" name="book-theme" value="strawberry-dots">
+                      <span class="paper-dot dot-berry" aria-hidden="true"></span>
+                      <span>Berry Polka</span>
+                    </label>
+                    <label class="paper-choice">
+                      <input type="radio" name="book-theme" value="mint-grid">
+                      <span class="paper-dot dot-mint" aria-hidden="true"></span>
+                      <span>Mint Grid</span>
+                    </label>
+                    <label class="paper-choice">
+                      <input type="radio" name="book-theme" value="lavender-stars">
+                      <span class="paper-dot dot-lilac" aria-hidden="true"></span>
+                      <span>Dreamy Lilac</span>
+                    </label>
+                    <label class="paper-choice">
+                      <input type="radio" name="book-theme" value="butter-stripes">
+                      <span class="paper-dot dot-butter" aria-hidden="true"></span>
+                      <span>Butter Stripes</span>
+                    </label>
+                    <label class="paper-choice">
+                      <input type="radio" name="book-theme" value="sakura-petals">
+                      <span class="paper-dot dot-sakura" aria-hidden="true"></span>
+                      <span>Sakura Blush</span>
+                    </label>
+                    <label class="paper-choice">
+                      <input type="radio" name="book-theme" value="midnight-velvet">
+                      <span class="paper-dot dot-night" aria-hidden="true"></span>
+                      <span>Starry Night</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div role="tabpanel" id="panel-stickers" aria-labelledby="tab-stickers" hidden="until-found">
+                <div class="tabpanel-inner">
+                  <p class="panel-intro">Tap a vinyl sticker to place it on the right page, then drag it anywhere.</p>
+                  <div class="sticker-picker-grid" id="sticker-picker-grid">
+                    <button type="button" class="sticker-btn" data-sticker="paw">Peach Paw</button>
+                    <button type="button" class="sticker-btn" data-sticker="strawberry">Berry</button>
+                    <button type="button" class="sticker-btn" data-sticker="sparkles">Sparkles</button>
+                    <button type="button" class="sticker-btn" data-sticker="bow">Pink Bow</button>
+                    <button type="button" class="sticker-btn" data-sticker="sakura">Sakura</button>
+                    <button type="button" class="sticker-btn" data-sticker="heart">Heart</button>
+                    <button type="button" class="sticker-btn" data-sticker="melon">Melon Soda</button>
+                    <button type="button" class="sticker-btn" data-sticker="washi">Washi Tape</button>
+                  </div>
+                  <button type="button" class="clear-stickers-btn" id="clear-stickers-btn">Clear stickers</button>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: 4-Corner Perspective Scanner Demo (Warm Peach Surface) -->
+    <section class="scanner-section" id="scanner">
+      <div class="section-shell scanner-layout">
+        <div class="scanner-copy">
+          <h2>Digitize real prints with four-corner perspective crop</h2>
+          <p>
+            Point your camera at a physical Polaroid sitting on a wooden desk. Cheki Book's edge detector locates all four corners automatically and rectifies the tilted print into a crisp, flat archival card.
+          </p>
+          <div class="scanner-control-block">
+            <label for="rectify-slider" class="slider-label">
+              <span>Perspective rectification</span>
+              <span id="rectify-percent" class="tabular-num">0%</span>
+            </label>
+            <input type="range" id="rectify-slider" min="0" max="100" value="0">
+            <button type="button" class="cta-primary" id="auto-rectify-btn">Rectify print now</button>
+          </div>
+        </div>
+
+        <div class="scanner-visual" id="scanner-visual" aria-label="Interactive perspective rectification demonstration">
+          <div class="desk-surface">
+            <div class="scanned-polaroid" id="scanned-polaroid">
+              <div class="scanned-photo">
+                <img src="assets/photo-venice.jpg" alt="Physical Polaroid print of Venice Beach sunset being straightened" width="320" height="320" loading="lazy">
+              </div>
+              <span class="scanned-caption">Malibu Cove '24</span>
+              <!-- 4 corner detection pins -->
+              <span class="corner-pin pin-tl" aria-hidden="true"></span>
+              <span class="corner-pin pin-tr" aria-hidden="true"></span>
+              <span class="corner-pin pin-bl" aria-hidden="true"></span>
+              <span class="corner-pin pin-br" aria-hidden="true"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Everyday Vault Capabilities (Crisp Gallery Light) -->
+    <section class="features-section" id="everyday">
+      <div class="section-shell">
+        <div class="section-header-wide">
+          <h2>See Cheki Book running on Android in light and dark themes</h2>
+          <p>
+            Browse real captures of the home vault, 3D frame picker, and landscape ring-bound album book. Toggle between light pastel and cozy dark mode to preview both themes.
+          </p>
+        </div>
+
+        <div class="real-gallery-showcase" id="app-gallery">
+          <div class="gallery-toolbar">
+            <div class="segmented-control" role="group" aria-label="Choose app screen">
+              <input type="radio" name="app-screen" id="scr-home" value="home" checked>
+              <label for="scr-home">Home Vault</label>
+              <input type="radio" name="app-screen" id="scr-detail" value="detail">
+              <label for="scr-detail">Frame Picker</label>
+              <input type="radio" name="app-screen" id="scr-cover" value="cover">
+              <label for="scr-cover">Book Cover</label>
+              <input type="radio" name="app-screen" id="scr-spread" value="spread">
+              <label for="scr-spread">Open Spread</label>
+            </div>
+
+            <div class="segmented-control" role="group" aria-label="Choose app theme">
+              <input type="radio" name="app-theme" id="theme-light" value="light" checked>
+              <label for="theme-light">Light mode</label>
+              <input type="radio" name="app-theme" id="theme-dark" value="dark">
+              <label for="theme-dark">Dark mode</label>
+            </div>
+          </div>
+
+          <figure class="gallery-stage">
+            <div class="device-frame is-portrait" id="gallery-device-frame">
+              <img id="gallery-active-img" src="assets/screen-home-light.jpg" alt="Cheki Book Android Home Vault in Light mode showing the Peach Paws banner, search bar, Flip All 3D button, Albums shelf, and Polaroid gallery grid" width="440" height="952" loading="lazy">
+            </div>
+            <figcaption id="gallery-active-caption">Home Vault in light mode: Peach Paws banner, Flip All 3D, album shelves, and instant search.</figcaption>
+          </figure>
+        </div>
+
+        <div class="features-editorial-grid">
+          <article class="feature-block">
+            <h3>Shake to shuffle, tilt to shimmer</h3>
+            <p>
+              Real hardware sensors bring your digital prints to life. Tilt your phone to catch holographic specular sheen across metallic foil and glossy frames, or give the device a quick shake to shuffle your vault and rediscover forgotten snaps.
+            </p>
+          </article>
+
+          <article class="feature-block">
+            <h3>Multi-album shelves and instant search</h3>
+            <p>
+              File a single Polaroid into multiple albums at once, favorite your best shots, and filter across front captions, handwritten back notes, dates, and locations in milliseconds.
+            </p>
+          </article>
+
+          <article class="feature-block">
+            <h3>Switch between English and Japanese live</h3>
+            <p>
+              Toggle the entire interface between English and <span lang="ja">日本語</span> from the top bar with zero restart, localizing every frame name, album shelf, and scanner prompt automatically.
+            </p>
+          </article>
+
+          <article class="feature-block">
+            <h3>Local-first vault with free JSON export</h3>
+            <p>
+              All photos and notes live offline in a local Room database on your device. Export or import complete JSON backups for free anytime, or upgrade to Cheki Cloud+ for automatic Google-authenticated Firestore sync across devices.
+            </p>
+          </article>
+        </div>
+
+        <!-- Closing Mascot Band -->
+        <div class="closing-band">
+          <img src="assets/mascot-camera.png" alt="Cheki Book cat mascot holding a pink instant camera" width="140" height="140" loading="lazy" class="closing-mascot">
+          <div class="closing-copy">
+            <h2>Ready to open your own Cheki Book?</h2>
+            <p>
+              Crafted natively for Android with Jetpack Compose, Room persistence, CameraX perspective scanning, and optional Firebase Cloud Sync.
+            </p>
+          </div>
+          <a href="#studio" class="cta-primary">Back to 3D Studio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/mascot-camera.png" alt="" width="32" height="32" loading="lazy">
+        <span>Cheki Book</span>
+      </div>
+      <p class="footer-note">Native Android Instant Photo Scrapbook &bull; English &amp; <span lang="ja">日本語</span></p>
+    </div>
+  </footer>
+
+  <div id="live-status" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

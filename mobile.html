@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light only">
+  <title>Mobile Preview (390×844) | Cheki Book</title>
+  <link rel="icon" type="image/png" href="assets/mascot-camera.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      min-height: 100dvh;
+      color-scheme: light only;
+      background: linear-gradient(160deg, #FFEDE2 0%, #FFF5EE 60%, #FFFBF7 100%);
+      font-family: "Quicksand", system-ui, sans-serif;
+      color: #4A312C;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      gap: 16px;
+    }
+    .preview-bar {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 0.875rem;
+      font-weight: 700;
+    }
+    .preview-bar a {
+      color: #E56B5E;
+      text-decoration: none;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: #FFFFFF;
+      border: 1.5px solid #F3CFC0;
+    }
+    .preview-bar a:hover {
+      border-color: #FF8577;
+    }
+    .phone-shell {
+      padding: 12px;
+      border-radius: 44px;
+      background: #FFFFFF;
+      border: 2px solid #F3CFC0;
+      box-shadow: 0 28px 64px rgba(74, 49, 44, 0.16), 0 4px 16px rgba(74, 49, 44, 0.08);
+    }
+    .phone-viewport {
+      display: block;
+      width: 390px;
+      height: min(844px, calc(100dvh - 110px));
+      border: 1px solid #F8DFD4;
+      border-radius: 32px;
+      background: #FFF5EE;
+    }
+  </style>
+</head>
+<body>
+  <div class="preview-bar">
+    <span>Cheki Book Mobile Preview (390 × 844)</span>
+    <a href="index.html">Back to desktop view</a>
+  </div>
+  <main class="phone-shell">
+    <iframe
+      class="phone-viewport"
+      src="index.html"
+      title="Cheki Book interactive mobile preview at 390 by 844 pixels"
+      width="390"
+      height="844"
+    ></iframe>
+  </main>
+</body>
+</html>
