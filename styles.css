@@ -302,6 +302,16 @@ textarea {
   box-shadow: 0 14px 28px rgba(255, 107, 139, 0.38);
 }
 
+.cta-coming-soon {
+  cursor: default;
+}
+
+.cta-coming-soon:hover {
+  filter: none;
+  transform: none;
+  box-shadow: 0 10px 24px rgba(255, 107, 139, 0.3);
+}
+
 /* Hero Interactive 3D Workbench */
 .hero-workbench {
   margin-top: 34px;
